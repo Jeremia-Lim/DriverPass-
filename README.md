@@ -1,2 +1,9 @@
-# DriverPass-
-goal was to provide a system that helps students prepare for their driver’s license exams
+The DriverPass project was designed for our client, DriverPass, whose goal was to provide a system that helps students prepare for their driver’s license exams. The client wanted a comprehensive platform where students could access online study materials, schedule driving lessons with instructors, and track their progress. This meant designing a system that supported account management, scheduling, reporting, and integration with both administrative and student-facing features.
+
+One thing I feel I did particularly well was creating clear diagrams that mapped out how the system’s processes and actors interact. These visuals made it easier to explain the system’s structure and functionality, and they provided a strong foundation for both technical design and user understanding.
+
+If I could revise one part of my work, I would improve the use case diagram. While it captured the basic interactions, I think it could be refined to include more specific system behaviors and relationships between actors. Adding more detail, such as alternative flows or constraints, would make it a stronger tool for developers to rely on during implementation.
+
+To interpret the user’s needs, I focused on the client interview transcript, which outlined what DriverPass required for their business model. I identified different users (students, admins, instructors, IT) and their main tasks, then incorporated those into the system design through use cases, activity diagrams, and class structures. Considering user needs is vital because a system that does not align with how people actually interact with it will not succeed, no matter how technically strong it is. A user-centered design ensures higher adoption, fewer errors, and better overall satisfaction.
+
+When approaching software design, I usually start by breaking down the system into smaller parts—actors, use cases, and data requirements—so I can understand what the system must do before deciding how it will do it. In the future, I plan to use strategies like iterative prototyping and user feedback loops earlier in the process. Techniques such as UML diagrams, user stories, and mockups help visualize and validate requirements, while agile methods allow the design to evolve as new needs are discovered.
