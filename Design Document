@@ -1,0 +1,23 @@
+CS 255 System Design Document Template
+
+
+UML Diagrams
+
+UML Use Case Diagram
+ 
+UML Activity Diagrams
+Schedule Driving Lesson 
+ 
+ 
+Take Online Practice Test 
+ 
+
+UML Sequence Diagram
+ 
+UML Class Diagram
+ 
+Technical Requirements
+The DriverPass system will be a cloud-hosted web application designed to support account management, lesson scheduling with drivers and vehicles, online classes and practice tests, reporting, and notification services. To meet client needs, the system will implement role-based access control for owners, administrators, IT staff, secretaries, drivers, and students. Because real-time scheduling and account updates are critical, all write operations must occur online, while limited read-only exports such as Excel or CSV files may be accessed offline.
+From a hardware and hosting perspective, the system should be deployed in a secure cloud environment such as AWS, Azure, or Google Cloud. The infrastructure will include application servers with at least two virtual CPUs and 8 GB of RAM, configured behind a managed load balancer with autoscaling to accommodate peak demand. A managed relational database service such as Amazon RDS or Azure Database for PostgreSQL will provide multi-zone high availability, with daily backups and point-in-time recovery enabled. Storage will scale automatically, and an object storage service such as Amazon S3 will be used for reports and static files with lifecycle policies in place. To ensure speed and global availability, a content delivery network (CDN) will deliver static content. Networking will follow best practices with separate public and private subnets, firewalls, and secure access rules.
+The software stack will be composed of a modern web frontend built with React, TypeScript, HTML5, and CSS for responsive and accessible design. The backend may be developed using Node.js with Express or Java with Spring Boot, depending on developer expertise and scalability requirements. PostgreSQL is the recommended database for storing structured data, with Redis used for caching sessions and supporting fast lookups. Authentication and authorization will be enforced using secure password hashing and role-based permissions, while data in transit will be protected with TLS/SSL encryption.
+For operational reliability, the system will employ automated daily backups with recovery point objectives of 15 minutes and recovery time objectives of four hours. Audit logging will be implemented to track who made, canceled, or updated reservations, fulfilling the client’s request for accountability. A notification service will be integrated to send confirmations, reminders, and updates to customers via email or SMS. Overall, this technical design ensures scalability, reliability, and compliance with security standards while minimizing maintenance overhead for the client.
